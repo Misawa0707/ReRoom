@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //  当たり判定を
     private void OnTriggerExit(Collider other)
     {
         rb.useGravity = true;
@@ -65,6 +66,7 @@ public class PlayerController : MonoBehaviour
         transform.position = pos;
     }
 
+    //  プレイヤーの上り下り処理
     void Climb()
     {
         
@@ -83,6 +85,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        //  重力をオフ
         rb.useGravity = false;
 
         //  プレイヤーの移動
