@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     //  移動スピード
     [SerializeField]
     private Vector2 speed = Vector2.zero;
-
     private Rigidbody rb;
 
     // Use this for initialization
@@ -74,7 +73,13 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey("up"))
         {
-            pos.y += 0.3f;
+            pos.y += 0.25f;
+
+        }
+
+        if (Input.GetKey("down"))
+        {
+            pos.y -= 0.25f;
 
         }
 
